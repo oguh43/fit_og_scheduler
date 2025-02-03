@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Scheduler de-su-ifier",
+    "version": "1.0",
+    "description": "Revert pointless changes back.",
+    "permissions": ["scripting", "storage"],
+    "host_permissions": ["https://su.fit.vut.cz/scheduler/*"],
+    "icons":{
+        "64": "icon.png"
+    },
+    "content_scripts": [
+        {
+        "matches": ["https://su.fit.vut.cz/scheduler/*"],
+        "js": ["content.js"]
+        }
+    ]
+    
+  }
+  
