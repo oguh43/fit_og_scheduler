@@ -9,7 +9,7 @@ jobs:
   release:
     name: Package and Release Extension
     runs-on: ubuntu-latest
-
+    permissions: write-all
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
