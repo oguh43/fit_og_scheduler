@@ -3,12 +3,12 @@ name: Build and Release Extension
 on:
   push:
     branches:
-      - master  # Change if needed (e.g., "master" or "dev")
+      - master
 
 jobs:
   release:
     name: Package and Release Extension
-    runs-on: all
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
