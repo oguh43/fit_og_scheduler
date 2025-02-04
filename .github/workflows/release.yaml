@@ -25,7 +25,6 @@ jobs:
           files: dist/extension.zip
           token: ${{ secrets.GITHUB_TOKEN }}
           tag_name: v1.0.${{ github.run_number }}
-          release_name: "Extension Release v1.0.${{ github.run_number }}"
           body: "🚀 New automatic release of the extension!"
           draft: false
           prerelease: false
